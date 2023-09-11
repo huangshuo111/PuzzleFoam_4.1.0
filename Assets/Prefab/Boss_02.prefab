@@ -1,0 +1,454 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1225480332403438}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1225480332403438
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4437781679870945}
+  - 114: {fileID: 114736941968017539}
+  m_Layer: 0
+  m_Name: Boss_02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4437781679870945
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1225480332403438}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114736941968017539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1225480332403438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f7db9a480b403690a4a83220213122, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  material: {fileID: 2100000, guid: dc677d81b4cc05448974a8ad1203cd59, type: 2}
+  sprites:
+  - name: Bos02_body00
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 155
+      width: 163
+      height: 112
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 155
+      width: 163
+      height: 112
+    rotated: 0
+    paddingLeft: 0.09815951
+    paddingRight: 0.06748466
+    paddingTop: 0.071428575
+    paddingBottom: 0.26785713
+  - name: Bos02_body01
+    outer:
+      serializedVersion: 2
+      x: 159
+      y: 21
+      width: 77
+      height: 133
+    inner:
+      serializedVersion: 2
+      x: 159
+      y: 21
+      width: 77
+      height: 133
+    rotated: 0
+    paddingLeft: 0.8181818
+    paddingRight: 1.2987013
+    paddingTop: 0.7593985
+    paddingBottom: 0.04511278
+  - name: Bos02_wing00
+    outer:
+      serializedVersion: 2
+      x: 239
+      y: 383
+      width: 97
+      height: 129
+    inner:
+      serializedVersion: 2
+      x: 239
+      y: 383
+      width: 97
+      height: 129
+    rotated: 0
+    paddingLeft: 0.0927835
+    paddingRight: 0.8659794
+    paddingTop: 0.39534885
+    paddingBottom: 0.07751938
+  - name: Bos02_head01
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 58
+      width: 158
+      height: 96
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 58
+      width: 158
+      height: 96
+    rotated: 0
+    paddingLeft: 0.06962025
+    paddingRight: 0.06962025
+    paddingTop: 1.03125
+    paddingBottom: 0.052083332
+  - name: Bos02_head00
+    outer:
+      serializedVersion: 2
+      x: 422
+      y: 414
+      width: 76
+      height: 98
+    inner:
+      serializedVersion: 2
+      x: 422
+      y: 414
+      width: 76
+      height: 98
+    rotated: 0
+    paddingLeft: 0.68421054
+    paddingRight: 0.68421054
+    paddingTop: 0.7653061
+    paddingBottom: 0.2755102
+  - name: Bos02_neck00
+    outer:
+      serializedVersion: 2
+      x: 239
+      y: 232
+      width: 38
+      height: 38
+    inner:
+      serializedVersion: 2
+      x: 239
+      y: 232
+      width: 38
+      height: 38
+    rotated: 0
+    paddingLeft: 0.28947368
+    paddingRight: 0.28947368
+    paddingTop: 0.28947368
+    paddingBottom: 0.28947368
+  - name: Bos02_eff00
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 268
+      width: 238
+      height: 244
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 268
+      width: 238
+      height: 244
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Bos02_eff_knockout_03
+    outer:
+      serializedVersion: 2
+      x: 445
+      y: 319
+      width: 58
+      height: 31
+    inner:
+      serializedVersion: 2
+      x: 445
+      y: 319
+      width: 58
+      height: 31
+    rotated: 0
+    paddingLeft: 0.3275862
+    paddingRight: 0.05172414
+    paddingTop: 0.12903225
+    paddingBottom: 0.16129032
+  - name: Bos02_eff_knockout_01
+    outer:
+      serializedVersion: 2
+      x: 337
+      y: 385
+      width: 70
+      height: 29
+    inner:
+      serializedVersion: 2
+      x: 337
+      y: 385
+      width: 70
+      height: 29
+    rotated: 0
+    paddingLeft: 0.071428575
+    paddingRight: 0.071428575
+    paddingTop: 0.13793103
+    paddingBottom: 0.2413793
+  - name: Bos02_eff_knockout_00
+    outer:
+      serializedVersion: 2
+      x: 422
+      y: 388
+      width: 71
+      height: 25
+    inner:
+      serializedVersion: 2
+      x: 422
+      y: 388
+      width: 71
+      height: 25
+    rotated: 0
+    paddingLeft: 0.056338027
+    paddingRight: 0.07042254
+    paddingTop: 0.24
+    paddingBottom: 0.36
+  - name: Bos02_eff_knockout_04
+    outer:
+      serializedVersion: 2
+      x: 239
+      y: 271
+      width: 64
+      height: 26
+    inner:
+      serializedVersion: 2
+      x: 239
+      y: 271
+      width: 64
+      height: 26
+    rotated: 0
+    paddingLeft: 0.1875
+    paddingRight: 0.0625
+    paddingTop: 0.23076923
+    paddingBottom: 0.30769232
+  - name: Bos02_eff_knockout_02
+    outer:
+      serializedVersion: 2
+      x: 445
+      y: 351
+      width: 62
+      height: 31
+    inner:
+      serializedVersion: 2
+      x: 445
+      y: 351
+      width: 62
+      height: 31
+    rotated: 0
+    paddingLeft: 0.09677419
+    paddingRight: 0.19354838
+    paddingTop: 0.12903225
+    paddingBottom: 0.16129032
+  - name: Bos02_eff_knockout_05
+    outer:
+      serializedVersion: 2
+      x: 164
+      y: 155
+      width: 74
+      height: 22
+    inner:
+      serializedVersion: 2
+      x: 164
+      y: 155
+      width: 74
+      height: 22
+    rotated: 0
+    paddingLeft: 0.054054055
+    paddingRight: 0.027027028
+    paddingTop: 0.4090909
+    paddingBottom: 0.4090909
+  - name: Bos02_finger00
+    outer:
+      serializedVersion: 2
+      x: 127
+      y: 17
+      width: 11
+      height: 40
+    inner:
+      serializedVersion: 2
+      x: 127
+      y: 17
+      width: 11
+      height: 40
+    rotated: 0
+    paddingLeft: 0.54545456
+    paddingRight: 0.8181818
+    paddingTop: 0.85
+    paddingBottom: 0.1
+  - name: Bos02_head02_02
+    outer:
+      serializedVersion: 2
+      x: 337
+      y: 415
+      width: 84
+      height: 97
+    inner:
+      serializedVersion: 2
+      x: 337
+      y: 415
+      width: 84
+      height: 97
+    rotated: 0
+    paddingLeft: 0.53571427
+    paddingRight: 0.60714287
+    paddingTop: 0.9587629
+    paddingBottom: 0.10309278
+  - name: Bos02_head02_00
+    outer:
+      serializedVersion: 2
+      x: 66
+      y: 17
+      width: 60
+      height: 40
+    inner:
+      serializedVersion: 2
+      x: 66
+      y: 17
+      width: 60
+      height: 40
+    rotated: 0
+    paddingLeft: 1.4
+    paddingRight: 0.6
+    paddingTop: 2.3
+    paddingBottom: 1.7
+  - name: Bos02_head02_03
+    outer:
+      serializedVersion: 2
+      x: 164
+      y: 178
+      width: 69
+      height: 89
+    inner:
+      serializedVersion: 2
+      x: 164
+      y: 178
+      width: 69
+      height: 89
+    rotated: 0
+    paddingLeft: 0.4057971
+    paddingRight: 1.2028985
+    paddingTop: 1.0224719
+    paddingBottom: 0.2247191
+  - name: Bos02_head02_01
+    outer:
+      serializedVersion: 2
+      x: 239
+      y: 298
+      width: 73
+      height: 84
+    inner:
+      serializedVersion: 2
+      x: 239
+      y: 298
+      width: 73
+      height: 84
+    rotated: 0
+    paddingLeft: 0.98630136
+    paddingRight: 0.47945204
+    paddingTop: 1.1071428
+    paddingBottom: 0.27380952
+  - name: Bos02_head02_04
+    outer:
+      serializedVersion: 2
+      x: 313
+      y: 319
+      width: 78
+      height: 63
+    inner:
+      serializedVersion: 2
+      x: 313
+      y: 319
+      width: 78
+      height: 63
+    rotated: 0
+    paddingLeft: 0.1923077
+    paddingRight: 1.1153846
+    paddingTop: 1.1587301
+    paddingBottom: 1.0158731
+  - name: Bos02_head02_05
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 5
+      width: 65
+      height: 52
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 5
+      width: 65
+      height: 52
+    rotated: 0
+    paddingLeft: 0.46153846
+    paddingRight: 1.3076923
+    paddingTop: 1.3846154
+    paddingBottom: 1.4615384
+  - name: Bos02_eff01
+    outer:
+      serializedVersion: 2
+      x: 392
+      y: 315
+      width: 52
+      height: 67
+    inner:
+      serializedVersion: 2
+      x: 392
+      y: 315
+      width: 52
+      height: 67
+    rotated: 0
+    paddingLeft: 0.03846154
+    paddingRight: 0.115384616
+    paddingTop: 0.4477612
+    paddingBottom: 0.04477612
+  - name: Bos02_eff02
+    outer:
+      serializedVersion: 2
+      x: 313
+      y: 298
+      width: 20
+      height: 20
+    inner:
+      serializedVersion: 2
+      x: 313
+      y: 298
+      width: 20
+      height: 20
+    rotated: 0
+    paddingLeft: 0.25
+    paddingRight: 0.25
+    paddingTop: 0.25
+    paddingBottom: 0.25
+  mCoordinates: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}

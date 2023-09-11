@@ -1,0 +1,468 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1995667792287119}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1995667792287119
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4325059260673380}
+  - 20: {fileID: 20740551422150242}
+  - 114: {fileID: 114659220898516091}
+  - 114: {fileID: 114400140155240883}
+  - 114: {fileID: 114893258691017415}
+  m_Layer: 10
+  m_Name: DragCamera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4325059260673380
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1995667792287119}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4982807539703539}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!20 &20740551422150242
+Camera:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1995667792287119}
+  m_Enabled: 1
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: -2
+  far clip plane: 2
+  field of view: 60
+  orthographic: 1
+  orthographic size: 0.4
+  m_Depth: -2
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!114 &114659220898516091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1995667792287119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9034c33a471224f5e93934f24220be41, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  debug: 0
+  useTouch: 1
+  allowMultiTouch: 0
+  useKeyboard: 0
+  useController: 0
+  stickyPress: 1
+  eventReceiverMask:
+    serializedVersion: 2
+    m_Bits: 1536
+  clipRaycasts: 1
+  tooltipDelay: 1
+  stickyTooltip: 1
+  mouseDragThreshold: 4
+  mouseClickThreshold: 10
+  touchDragThreshold: 40
+  touchClickThreshold: 40
+  rangeDistance: -1
+  scrollAxisName: Mouse ScrollWheel
+  verticalAxisName: Vertical
+  horizontalAxisName: Horizontal
+  submitKey0: 13
+  submitKey1: 330
+  cancelKey0: 27
+  cancelKey1: 331
+--- !u!114 &114400140155240883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1995667792287119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dd090a2b17ee3f1ddeaf94ac6eb51ea, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  requiredFingerCount: 1
+  MaxSimultaneousGestures: 1
+  ResetMode: 0
+  Raycaster: {fileID: 0}
+  ClusterManager: {fileID: 0}
+  Delegate: {fileID: 0}
+  UseSendMessage: 1
+  EventMessageName: OnPinch
+  EventMessageTarget: {fileID: 1995667792287119}
+  SendMessageToSelection: 0
+  IsExclusive: 0
+  MinDOT: -0.7
+  MinDistance: 5
+  DeltaScale: 1
+--- !u!114 &114893258691017415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1995667792287119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f491481b72c7a48423e33e01b1aca1a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  requiredFingerCount: 1
+  MaxSimultaneousGestures: 1
+  ResetMode: 0
+  Raycaster: {fileID: 0}
+  ClusterManager: {fileID: 0}
+  Delegate: {fileID: 0}
+  UseSendMessage: 1
+  EventMessageName: OnDrag
+  EventMessageTarget: {fileID: 1995667792287119}
+  SendMessageToSelection: 0
+  IsExclusive: 0
+  MoveTolerance: 5
+  ApplySameDirectionConstraint: 0
+--- !u!1 &1873444605706851
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4982807539703539}
+  - 65: {fileID: 65174748398737249}
+  - 114: {fileID: 114404486643753434}
+  m_Layer: 10
+  m_Name: DragObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4982807539703539
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1873444605706851}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4980877759585313}
+  m_Father: {fileID: 4325059260673380}
+  m_RootOrder: 0
+--- !u!65 &65174748398737249
+BoxCollider:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1873444605706851}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Size: {x: 2200, y: 5000, z: 1}
+  m_Center: {x: 0, y: 0, z: 10}
+--- !u!114 &114404486643753434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1873444605706851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4c2a163d9afe0ba800bef3d6b429182, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  target: {fileID: 4980877759585313}
+  space: 200
+  MovingRange: {x: 0, y: 820, z: 800, w: 3300}
+  scale: {x: -1, y: -1, z: 1}
+  scrollWheelFactor: 0
+  restrictWithinPanel: 1
+  dragEffect: 2
+  momentumAmount: 35
+--- !u!1 &1688826032108065
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4980877759585313}
+  - 20: {fileID: 20723755340221359}
+  - 114: {fileID: 114959296174649571}
+  - 114: {fileID: 114137271100374114}
+  - 114: {fileID: 114603282000368920}
+  - 114: {fileID: 114147031816746154}
+  m_Layer: 9
+  m_Name: MapCamera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4980877759585313
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1688826032108065}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4966654259222196}
+  m_Father: {fileID: 4982807539703539}
+  m_RootOrder: 0
+--- !u!20 &20723755340221359
+Camera:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1688826032108065}
+  m_Enabled: 1
+  m_ClearFlags: 4
+  m_BackGroundColor: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: -2
+  far clip plane: 2
+  field of view: 60
+  orthographic: 1
+  orthographic size: 0.4
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 512
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!114 &114959296174649571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1688826032108065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9034c33a471224f5e93934f24220be41, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  debug: 0
+  useTouch: 1
+  allowMultiTouch: 0
+  useKeyboard: 0
+  useController: 0
+  stickyPress: 1
+  eventReceiverMask:
+    serializedVersion: 2
+    m_Bits: 512
+  clipRaycasts: 1
+  tooltipDelay: 1
+  stickyTooltip: 1
+  mouseDragThreshold: 4
+  mouseClickThreshold: 10
+  touchDragThreshold: 40
+  touchClickThreshold: 40
+  rangeDistance: -1
+  scrollAxisName: Mouse ScrollWheel
+  verticalAxisName: Vertical
+  horizontalAxisName: Horizontal
+  submitKey0: 13
+  submitKey1: 330
+  cancelKey0: 27
+  cancelKey1: 331
+--- !u!114 &114137271100374114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1688826032108065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 979d55814a299d191146c99551abf2ca, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  PinchScale: 0.002
+  MoveRangeMax: {x: 650, y: 3500}
+  PinchMin: 0.4
+  PinchMax: 0.9
+  PinchMoveScale: 2
+  MoveTime: 1
+  EaseType: 5
+  DragScaleMax: {x: -2.3, y: -2.3}
+  dragObject_: {fileID: 0}
+  DefMoveRangeMax_:
+  - {x: 650, y: 2000}
+  - {x: 650, y: 2100}
+  - {x: 650, y: 2600}
+  - {x: 650, y: 2600}
+  - {x: 650, y: 3500}
+  - {x: 650, y: 3900}
+  - {x: 650, y: 3400}
+  - {x: 650, y: 3850}
+  - {x: 650, y: 3750}
+  - {x: 650, y: 3650}
+  - {x: 650, y: 2400}
+  DefMoveRange_:
+  - {x: 0, y: 220, z: 800, w: 2000}
+  - {x: 0, y: 300, z: 800, w: 2100}
+  - {x: 0, y: 550, z: 800, w: 2600}
+  - {x: 0, y: 550, z: 800, w: 2600}
+  - {x: 0, y: 1000, z: 800, w: 3500}
+  - {x: 0, y: 1200, z: 800, w: 3900}
+  - {x: 0, y: 925, z: 800, w: 3400}
+  - {x: 0, y: 1150, z: 800, w: 3850}
+  - {x: 0, y: 1100, z: 800, w: 3750}
+  - {x: 0, y: 1050, z: 800, w: 3650}
+  - {x: 0, y: 450, z: 800, w: 2400}
+  EventMoveRangeMax: {x: 320, y: 2000}
+  EventMoveRange: {x: 0, y: 450, z: 380, w: 2200}
+  DEF_EVENT_RANGE_MAX_W: 320
+  DEF_EVENT_RANGE_W: 470
+  DEF_EVENT_RANGE_MAX_H_ONE: 85
+  DEF_EVENT_RANGE_H_ONE: 85
+  DEF_EVENT_RANGE_CENTER_H: -1850
+--- !u!114 &114603282000368920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1688826032108065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dd090a2b17ee3f1ddeaf94ac6eb51ea, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  requiredFingerCount: 1
+  MaxSimultaneousGestures: 1
+  ResetMode: 0
+  Raycaster: {fileID: 0}
+  ClusterManager: {fileID: 0}
+  Delegate: {fileID: 0}
+  UseSendMessage: 1
+  EventMessageName: OnPinch
+  EventMessageTarget: {fileID: 1688826032108065}
+  SendMessageToSelection: 0
+  IsExclusive: 0
+  MinDOT: -0.7
+  MinDistance: 5
+  DeltaScale: 1
+--- !u!114 &114147031816746154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1688826032108065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f491481b72c7a48423e33e01b1aca1a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  requiredFingerCount: 1
+  MaxSimultaneousGestures: 1
+  ResetMode: 0
+  Raycaster: {fileID: 0}
+  ClusterManager: {fileID: 0}
+  Delegate: {fileID: 0}
+  UseSendMessage: 1
+  EventMessageName: OnDrag
+  EventMessageTarget: {fileID: 1688826032108065}
+  SendMessageToSelection: 0
+  IsExclusive: 0
+  MoveTolerance: 5
+  ApplySameDirectionConstraint: 0
+--- !u!1 &1532374996319739
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4966654259222196}
+  - 114: {fileID: 114155097771838775}
+  m_Layer: 9
+  m_Name: FingerGestures
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4966654259222196
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1532374996319739}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4980877759585313}
+  m_RootOrder: 0
+--- !u!114 &114155097771838775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1532374996319739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0008fceb2e73ef9f3a008f72dc4b379, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  makePersistent: 1
+  detectUnityRemote: 1
+  mouseInputProviderPrefab: {fileID: 114238658641517975, guid: 71a81720554f9c34ba7a14cafa042466, type: 2}
+  touchInputProviderPrefab: {fileID: 114453562582640872, guid: 7bec7b7dd5e7192488867fe245de8a98, type: 2}
+  adjustPixelScaleForRetinaDisplay: 1
+  retinaPixelScale: 0.5
